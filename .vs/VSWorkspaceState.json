@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CaelumEstoque",
-    "\\CaelumEstoque\\Controllers",
-    "\\CaelumEstoque\\DAO",
-    "\\CaelumEstoque\\Models",
-    "\\CaelumEstoque\\Views",
-    "\\CaelumEstoque\\Views\\Home",
-    "\\CaelumEstoque\\Views\\Produto"
+    "\\CaelumEstoque"
   ],
   "SelectedNode": "\\CaelumEstoque\\CaelumEstoque.csproj",
   "PreviewInSolutionExplorer": false
