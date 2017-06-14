@@ -24,9 +24,11 @@
 
             <label for="quantidade">Quantidade</label>
             <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade"/>
+            @Html.ValidationMessage("Produto.Quantidade")
 
             <label for="descricao">Descrição</label>
             <input id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao"/>
+            @Html.ValidationMessage("Produto.Descricao")
 
             <label for="categoria">Categoria</label>
             <select id="categoria" name="produto.CategoriaId">
