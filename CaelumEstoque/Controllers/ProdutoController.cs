@@ -15,7 +15,8 @@ namespace CaelumEstoque.Controllers
         {
             ProdutosDAO dao = new ProdutosDAO();
             IList<Produto> produtos = dao.Lista();
-            
+            ViewBag.produto = produtos;
+
             return View();
         }
 
@@ -24,6 +25,7 @@ namespace CaelumEstoque.Controllers
             CategoriasDAO dao = new CategoriasDAO();
             IList<CategoriaDoProduto> categoria = dao.Lista();
             ViewBag.Categorias = categoria;
+            ViewBag.Produto = new Produto();
 
             return View();
         }
@@ -31,9 +33,14 @@ namespace CaelumEstoque.Controllers
         [HttpPost]
         public ActionResult Adiciona(Produto produto)
         {
+            int idDaInformatica = 1;
+            if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco > 100)
+            {
+                ModelState.AddModelError("produto.Invalido", "Preço acima de 100 reais");
+            }
 
             if (ModelState.IsValid)
-            {
+            {                
                 ProdutosDAO dao = new ProdutosDAO();
                 dao.Adiciona(produto);
 
@@ -41,6 +48,8 @@ namespace CaelumEstoque.Controllers
             }
             else
             {
+                ViewBag.Produto = produto;
+
                 CategoriasDAO categoriasDAO = new CategoriasDAO();
                 ViewBag.Categorias = categoriasDAO.Lista();
 
