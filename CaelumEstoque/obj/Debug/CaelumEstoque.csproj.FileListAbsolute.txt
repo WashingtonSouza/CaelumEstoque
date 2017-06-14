@@ -65,3 +65,26 @@ C:\Users\washington.souza\Documents\Visual Studio 2017\Projects\CaelumEstoque\Ca
 C:\Users\washington.souza\Documents\Visual Studio 2017\Projects\CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.pdb
 C:\Users\washington.souza\Documents\Visual Studio 2017\Projects\CaelumEstoque\CaelumEstoque\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\washington.souza\Documents\Visual Studio 2017\Projects\CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.csprojResolveAssemblyReference.cache
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\CaelumEstoque.dll.config
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\CaelumEstoque.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\CaelumEstoque.pdb
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\EntityFramework.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Helpers.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Mvc.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Razor.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.Deployment.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.Razor.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\EntityFramework.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\EntityFramework.SqlServer.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Razor.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.Deployment.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Webpages.Razor.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Helpers.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\bin\System.Web.Mvc.xml
+D:\Projetos\CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.csprojResolveAssemblyReference.cache
+D:\Projetos\CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.dll
+D:\Projetos\CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.pdb

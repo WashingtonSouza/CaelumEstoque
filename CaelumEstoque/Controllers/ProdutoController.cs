@@ -37,7 +37,7 @@ namespace CaelumEstoque.Controllers
                 ProdutosDAO dao = new ProdutosDAO();
                 dao.Adiciona(produto);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Produto");
             }
             else
             {
