@@ -3,22 +3,22 @@
     @Html.ValidationMessage("produto.Invalido")
 
     <label for="nome">Nome:</label>
-    <input id="nome" name="produto.Nome" value="@ViewBag.Produto.Nome" class="form-control"/>
+    <input id="nome" name="Nome" class="form-control"/>
     @Html.ValidationMessage("produto.Nome")
 
     <label for="preco">Preço</label>
-    <input id="preco" name="produto.Preco" value="@ViewBag.Produto.Preco" class="form-control"/>
+    <input id="preco" name="Preco"  class="form-control"/>
 
     <label for="quantidade">Quantidade</label>
-    <input id="quantidade" name="produto.Quantidade" value="@ViewBag.Produto.Quantidade" class="form-control"/>
+    <input id="quantidade" name="Quantidade" class="form-control"/>
     @Html.ValidationMessage("Produto.Quantidade")
 
     <label for="descricao">Descrição</label>
-    <input id="descricao" name="produto.Descricao" value="@ViewBag.Produto.Descricao" class="form-control"/>
+    <input id="descricao" name="Descricao" class="form-control"/>
     @Html.ValidationMessage("Produto.Descricao")
 
     <label for="categoria">Categoria</label>
-    <select id="categoria" name="produto.CategoriaId" class="form-control">
+    <select id="categoria" name="CategoriaId" class="form-control">
         @foreach (var categoria in ViewBag.Categorias)
         {
             <option value="@categoria.Id" selected ="@categoria.Id.Equals(ViewBag.Produto.CategoriaId)">
