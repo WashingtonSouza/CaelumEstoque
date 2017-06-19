@@ -6,6 +6,7 @@
             <th>ID</th>
             <th>Nome</th>
             <th>Quantidade</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +16,10 @@
                 <td>@produto.Id</td>
                 <td>@Html.RouteLink(produto.Nome, "VisualizaProdutos", new { id = produto.Id })</td>
                 <td>@produto.Quantidade</td>
+                <td>
+                    <a href="">Decrementar</a>
+                </td>
+                <td></td>
             </tr>
         }
     </tbody>

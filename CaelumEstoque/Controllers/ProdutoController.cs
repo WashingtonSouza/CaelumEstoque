@@ -19,6 +19,7 @@ namespace CaelumEstoque.Controllers
             return View(produtos);
         }
 
+        [Route("Produto/Cadastro", Name = "Cadastro" )]
         public ActionResult Form()
         {
             CategoriasDAO dao = new CategoriasDAO();
@@ -37,6 +38,7 @@ namespace CaelumEstoque.Controllers
             {
                 ModelState.AddModelError("produto.Invalido", "Preço acima de 100 reais");
             }
+
 
             if (ModelState.IsValid)
             {                
@@ -64,6 +66,17 @@ namespace CaelumEstoque.Controllers
             Produto produto = dao.BuscaPorId(id);
                       
             ViewBag.Produtos = produto;
+
+            return View();
+        }
+
+        public ActionResult DecrementaQtd(int id)
+        {
+            ProdutosDAO dao = new ProdutosDAO();
+            Produto produto = dao.BuscaPorId(id);
+            produto.Quantidade--;
+            dao.Atualiza(produto);
+            return RedirectToAction("Index");
 
             return View();
         }
