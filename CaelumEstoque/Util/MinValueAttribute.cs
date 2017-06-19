@@ -17,7 +17,7 @@ namespace CaelumEstoque.Util
 
         public override bool IsValid(object value)
         {
-            return (double) value > _minValue;
+            return (float) value >= _minValue;
         }
     }
 }

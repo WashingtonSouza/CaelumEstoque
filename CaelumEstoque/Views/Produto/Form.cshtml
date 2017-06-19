@@ -1,5 +1,6 @@
 ﻿ 
 <form action="/Produto/Adiciona" method="post">
+    @Html.AntiForgeryToken()
     @Html.ValidationMessage("produto.Invalido")
 
     <label for="nome">Nome:</label>
@@ -11,11 +12,11 @@
 
     <label for="quantidade">Quantidade</label>
     <input id="quantidade" name="Quantidade" class="form-control"/>
-    @Html.ValidationMessage("Produto.Quantidade")
+    @Html.ValidationMessage("produto.Quantidade")
 
     <label for="descricao">Descrição</label>
     <input id="descricao" name="Descricao" class="form-control"/>
-    @Html.ValidationMessage("Produto.Descricao")
+    @Html.ValidationMessage("produto.Descricao")
 
     <label for="categoria">Categoria</label>
     <select id="categoria" name="CategoriaId" class="form-control">

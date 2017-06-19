@@ -14,7 +14,8 @@ namespace CaelumEstoque.Models
         [Required, StringLength(20)]
         public String Nome { get; set; }
 
-        [MinValueAttribute(0.00, ErrorMessage = "Valor tem que ser superior a 0")]        
+        [Range(0.01 , 10000.00)]    
+        //[MinValueAttribute(0)]
         public float Preco { get; set; }   
 
         public CategoriaDoProduto Categoria { get; set; }

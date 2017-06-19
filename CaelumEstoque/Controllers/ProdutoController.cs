@@ -1,4 +1,5 @@
 ﻿using CaelumEstoque.DAO;
+using CaelumEstoque.Filtros;
 using CaelumEstoque.Models;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Web.Mvc;
 
 namespace CaelumEstoque.Controllers
 {
+    [AutorizacaoFilter]
     public class ProdutoController : Controller
     {
         [Route("produtos", Name ="ListaProdutos")]
@@ -31,20 +33,21 @@ namespace CaelumEstoque.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Adiciona(Produto produto)
         {
-            int idDaInformatica = 1;
             
-            if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco > 10000)
-            {
-                ModelState.AddModelError("produto.Invalido", "Preço " + produto.Preco + " acima da faixa ");
-            }
-
-
+            
             if (ModelState.IsValid)
-            {                
+            {
+                int idDaInformatica = 1;
                 ProdutosDAO dao = new ProdutosDAO();
                 dao.Adiciona(produto);
+
+                if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco > 10000)
+                {
+                    ModelState.AddModelError("produto.Invalido", "Preço " + produto.Preco + " acima da faixa ");
+                }
 
                 return RedirectToAction("Index", "Produto");
             }
