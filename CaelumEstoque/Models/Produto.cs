@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CaelumEstoque.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace CaelumEstoque.Models
         [Required, StringLength(20)]
         public String Nome { get; set; }
 
-        [Range(00.00 , 10000.00)]
+        [MinValueAttribute(0.00, ErrorMessage = "Valor tem que ser superior a 0")]        
         public float Preco { get; set; }   
 
         public CategoriaDoProduto Categoria { get; set; }

@@ -34,9 +34,10 @@ namespace CaelumEstoque.Controllers
         public ActionResult Adiciona(Produto produto)
         {
             int idDaInformatica = 1;
-            if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco >= 100)
+            
+            if (produto.CategoriaId.Equals(idDaInformatica) && produto.Preco > 10000)
             {
-                ModelState.AddModelError("produto.Invalido", "Preço acima de 100 reais");
+                ModelState.AddModelError("produto.Invalido", "Preço " + produto.Preco + " acima da faixa ");
             }
 
 
